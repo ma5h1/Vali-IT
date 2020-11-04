@@ -9,23 +9,49 @@ public class Lesson1 {
         excersie4();
     }
 
-    public static void excersie1(){
+    public static void excersie1() {
         // TODO
         // defineeri 3 muutujat a = 1, b = 1, c = 3
         // Prindi välja a==b ja a==c
         // Lisa rida a = c
         // Prindi välja a==b ja a==c, mis muutus???
+        int a = 1;
+        int b = 1;
+        int c = 3;
+        System.out.println(a == b);
+        System.out.println(a == c);
+        a = c;
+        System.out.println();
+        System.out.println(a == b);
+        System.out.println(a == c);
+
+
     }
 
-    public static void excersie2(){
+    public static void excersie2() {
         // TODO
         // Loo muutujad x1 = 10 ja x2 = 20, vali sobiv andmetüüp
         // Tekita muutuja y1 = ++x1, trüki välja nii x1 kui y1
         // Tekita muutuja y2 = x2++, trüki välja nii x2 ja y2
         // Analüüsi tulemusi
+        int x1 = 10;
+        int x2 = 20;
+        int y1 = ++x1;
+        int y2 = x2++;
+        System.out.println(x1 + " " + y1);
+        System.out.println(x2 + " " + y2);
+        /*
+        public static void test(){
+        int a = 4;
+        int b = 8;
+        //ilma et kasutad kolmandat muutujat, muuda a ja b väärtused
+        }*/
     }
 
-    public static void excersie3(){
+
+
+
+    public static void excersie3() {
         // TODO
         // Loo arvulised muutujad
         // a = 18 % 3
@@ -33,12 +59,24 @@ public class Lesson1 {
         // c = 20 % 3
         // d = 21 % 3
         // Prindi välja kõigi muutujate väärtused
+        int a = 18 % 3;
+        int b = 19 % 3;
+        int c = 20 % 3;
+        int d = 21 % 3;
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(c);
+        System.out.println(d);
+
+        //protsendi märk annab tulemuseks jagatise jäägi
     }
 
-    public static void excersie4(){
+    public static void excersie4() {
         // TODO
         // Defineeri String tüüpi muutuja mille sisu oleks "\"\\""
         // Trüki muutuja sisu välja
+        String g="\"\\\"\\\\\"\"";
+        System.out.println(g);
     }
 
 }
