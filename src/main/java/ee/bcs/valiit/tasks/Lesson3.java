@@ -62,16 +62,18 @@ public class Lesson3 {
         // Näiteks:
         // a = "Test";
         // return tseT";
-        a = "Artur";
         int size=a.length();
-        int[] intArray = new int[size];
-        for (int i = 0; i < size; i++) {
-            intArray[i] = 1;
-        }
+        int[] StringArray = new int[size-1];
+        int[] StringArray1 = new int[size-1];
+
         for (int i = size-1; i >= 0; i--) {
-            System.out.println(intArray[i]);
+            StringArray[i] = a.charAt(i);
         }
-        return "";
+        for (int i = size-1; i>=0; i--) {
+            StringArray1[i] = a.charAt(i);
+        }
+
+        return ;
     }
 
     public static boolean isPrime(int x) {
